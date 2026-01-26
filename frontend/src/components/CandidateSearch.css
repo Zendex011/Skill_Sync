@@ -1,0 +1,26 @@
+.candidate-search-section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.candidate-search-section .section-header {
+    margin-bottom: 2.5rem;
+}
+
+.candidates-layout {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 2rem;
+}
+
+.candidates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+@media (max-width: 900px) {
+    .candidates-layout {
+        grid-template-columns: 1fr;
+    }
+}

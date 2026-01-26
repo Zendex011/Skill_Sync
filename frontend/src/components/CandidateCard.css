@@ -1,0 +1,72 @@
+.candidate-card {
+    padding: 1.5rem;
+    border-radius: var(--radius-lg);
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.candidate-avatar {
+    width: 48px;
+    height: 48px;
+    background: var(--glass-border);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+}
+
+.match-score {
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.candidate-info h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.2rem;
+}
+
+.candidate-title {
+    color: var(--text-muted-light);
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+}
+
+.candidate-meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.8rem;
+    color: var(--text-muted-light);
+}
+
+.candidate-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.skill-tag {
+    font-size: 0.75rem;
+    background: var(--glass-border);
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+}
+
+.view-btn {
+    width: 100%;
+    justify-content: center;
+}

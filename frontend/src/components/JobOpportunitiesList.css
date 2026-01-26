@@ -1,0 +1,130 @@
+.job-opportunities-container {
+    margin-top: 2rem;
+}
+
+.job-opportunities-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.opportunities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+}
+
+.job-opp-card {
+    padding: 1.25rem;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+    min-height: 160px;
+}
+
+.job-opp-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+}
+
+.platform-badge {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.25rem 0.5rem;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.priority-indicator {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 100px;
+}
+
+.priority-high {
+    background: rgba(16, 185, 129, 0.15);
+    color: #34d399;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.priority-medium {
+    background: rgba(59, 130, 246, 0.15);
+    color: #60a5fa;
+    border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.query-text {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0.5rem 0 0.25rem 0;
+    color: var(--text-primary);
+    line-height: 1.4;
+}
+
+.location-text {
+    font-size: 0.85rem;
+    color: var(--text-muted-light);
+    margin-bottom: 1.5rem;
+}
+
+.view-btn {
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: auto;
+}
+
+.view-btn:hover {
+    background: var(--primary);
+    color: white;
+}
+
+/* Platform specific accents (subtle) */
+.job-opp-card[data-platform="linkedin"] {
+    border-left: 3px solid #0077b5;
+}
+
+.job-opp-card[data-platform="naukri"] {
+    border-left: 3px solid #FF7555;
+}
+
+.job-opp-card[data-platform="indeed"] {
+    border-left: 3px solid #2164f3;
+}
+
+.job-opp-card[data-platform="google_jobs"] {
+    border-left: 3px solid #4285F4;
+}
+
+.job-opp-card[data-platform="wellfound"] {
+    border-left: 3px solid #000000;
+}

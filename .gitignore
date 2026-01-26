@@ -1,0 +1,91 @@
+# Environment variables (SENSITIVE - contains API keys)
+.env
+.env.local
+.env.*.local
+
+# Python virtual environment
+venv/
+env/
+ENV/
+.venv
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+job_ingestion/jobs.db
+
+# Cache directories
+.cache/
+rag/.cache/
+*.cache
+
+# Test files
+test_*.py
+*_test.py
+test*.py
+*test.py
+reproduce_issue.py
+verify_skills.py
+check_db.py
+
+# Batch files (Windows-specific)
+*.bat
+
+# Roadmap and planning files
+roadmap.txt
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+job_ingestion/cron/ingestion.log
+
+# Sample resumes (may contain personal data)
+resume_parser/sample resumes/
+*.pdf
+*.docx
+*.doc
+
+# Node modules and frontend build
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.vite/
+
+# Package lock files (optional - some prefer to keep these)
+frontend/package-lock.json
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Output files
+test_output.txt
+current_deps.txt
+jd_parser/current_deps.txt
+
+# Data files (may contain scraped job data)
+data/
+
+# Embeddings cache
+embeddings/.cache/
+
+# OS files
+Thumbs.db
+.DS_Store

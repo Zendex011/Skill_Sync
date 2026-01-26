@@ -1,0 +1,8 @@
+.dashboard-container {
+    display: flex;
+    min-height: calc(100vh - 72px);
+    background: var(--bg-light);
+}
+
+/* Sidebar and content styles are mostly shared from CandidateDashboard, 
+   but I'll redefine or ensure they are global enough. */
