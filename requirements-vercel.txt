@@ -1,0 +1,14 @@
+# Minimal requirements for Vercel deployment
+fastapi==0.115.6
+uvicorn==0.32.0
+python-dotenv==1.0.0
+requests==2.32.5
+pydantic==2.9.2
+SQLAlchemy==2.0.45
+sentence-transformers==5.2.0
+transformers==4.51.3
+torch==2.6.0
+langchain==0.3.14
+langchain-community==0.3.14
+langchain-huggingface==1.2.0
+chromadb==0.6.3
