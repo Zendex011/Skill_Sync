@@ -1,7 +1,7 @@
 # backend/api/main.py
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from backend.api.routes import resume, matching, jobs
+from api.routes import resume, matching, jobs
 
 # Create app
 app = FastAPI(
@@ -19,6 +19,8 @@ app.add_middleware(
         "http://localhost:5173",  # Vite default port
         "http://localhost:3000",  # Alternative
         "http://127.0.0.1:5173",
+        "https://*.vercel.app",  # Vercel deployments
+        "*"  # Allow all origins (restrict this in production to your specific domains)
     ],
     allow_credentials=True,
     allow_methods=["*"],
