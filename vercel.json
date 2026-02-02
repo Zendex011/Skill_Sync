@@ -27,8 +27,8 @@
     }
   ],
   "env": {
-    "HF_TOKEN": "@hf_token",
-    "X_RapidAPI_Key": "@x_rapidapi_key",
-    "APLY_HUB_API": "@aply_hub_api"
+    "HF_TOKEN": "",
+    "X_RapidAPI_Key": "",
+    "APLY_HUB_API": ""
   }
 }
