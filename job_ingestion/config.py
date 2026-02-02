@@ -4,7 +4,7 @@ import os
 REMOTIVE_API_URL = "https://remotive.io/api/remote-jobs"
 
 # RapidAPI (JSearch) Configuration
-RAPIDAPI_KEY = os.getenv("X-RapidAPI-Key")
+RAPIDAPI_KEY = os.getenv("X_RapidAPI_Key")
 RAPIDAPI_HOST = "jsearch.p.rapidapi.com"
 RAPIDAPI_URL = "https://jsearch.p.rapidapi.com/search"
 

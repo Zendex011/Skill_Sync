@@ -15,7 +15,7 @@ class RapidAPIClient:
     def __init__(self):
         self.api_url = RAPIDAPI_URL
         self.headers = {
-            "X-RapidAPI-Key": RAPIDAPI_KEY,
+            "X_RapidAPI_Key": RAPIDAPI_KEY,
             "X-RapidAPI-Host": RAPIDAPI_HOST
         }
         
@@ -24,7 +24,7 @@ class RapidAPIClient:
         Fetch jobs from JSearch API
         """
         if not RAPIDAPI_KEY:
-            print("Error: X-RapidAPI-Key not found in environment variables.")
+            print("Error: X_RapidAPI_Key not found in environment variables.")
             return []
             
         all_jobs = []

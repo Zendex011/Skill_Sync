@@ -16,11 +16,11 @@ class JSearchService:
     """Service for searching jobs via JSearch API"""
     
     def __init__(self):
-        self.api_key = os.getenv("X-RapidAPI-Key")
+        self.api_key = os.getenv("X_RapidAPI_Key")
         self.host = "jsearch.p.rapidapi.com"
         
         if not self.api_key:
-            raise ValueError("X-RapidAPI-Key not found in environment variables")
+            raise ValueError("X_RapidAPI_Key not found in environment variables")
     
     def search_jobs(
         self,
