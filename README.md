@@ -139,6 +139,9 @@ job finder/
 └── SCHEDULING_GUIDE.md          # Cron setup instructions
 ```
 
+##Demo Video
+https://drive.google.com/file/d/1OHXEM5EQmBIYHkq1aoenhyqRNRtVgtg9/view?usp=sharing
+
 ## How to Run
 
 ### Prerequisites
